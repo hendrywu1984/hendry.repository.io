@@ -1,82 +1,79 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); 
 
-body{
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-image: url('../image/bg.png');
+#chatwidget img{
+    width: 10%;
 }
 
-header{
-    position: fixed;
-    background: #ccc;
+.top-header{
+    font-size: 25px;
+    background: #f9fd01;
     width: 100%;
     border-bottom: 1px solid #ddd;
     top: 0;
 }
 
-header nav{
+header div{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.7);
+    /* align-items: center; */
+    
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100 */
-    background: #f6f8f9; /* Old browsers */
+    /* background: #f6f8f9; *//* Old browsers 
     background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+    /* background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); *//* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); IE6-9 */ */
 }
 
-header nav img{
-    width: 70px;
-    height: 70px;
-    position: relative;
-    left: 10px;
+
+div img {
+    width: 25%;
 }
 
-header nav ul{
+main nav ul {
     list-style-type: none;
     list-style-position: outside;
 }
 
-header nav ul li{
-    display: inline-block;
+main nav ul li {
+    display: block;
 }
 
-header nav ul li a{
+main nav ul li a {
     padding: 15px 20px;
-    color: #03A9F4;
+    color: #ff9933;
     text-decoration: none;
     text-shadow: 2px 2px 0px #fff;
 }
 
-header nav ul li a:hover{
-    color: #333;
-    outline: 1px solid #bff8ff;
-    box-shadow: -2px -2px 10px #b9e9ff inset, 2px 2px 10px -3px #3336;
+main nav ul li a:hover{
+    color: #ff3300;
+    outline: 1px #0f0f0a;
+    display: block;
+    background: -moz-linear-gradient(-45deg,  rgba(255,0,255,0.59) 0%, rgba(241,241,0,0.8) 50%, rgba(225,225,0,0.8) 51%, rgba(0,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,0,255,0.59) 0%,rgba(241,241,0,0.8) 50%,rgba(225,225,0,0.8) 51%,rgba(0,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,0,255,0.59) 0%,rgba(241,241,0,0.8) 50%,rgba(225,225,0,0.8) 51%,rgba(0,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ 
 }
 
-main{
-    width: 80%;
-    margin: 90px auto 40px auto;
-    min-height: 200px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 2px 2px 20px -6px #333;
-    border-radius: 15px;
-    padding: 10px;
+body{
+    background-image: url('images/purty_wood.png');
+}
+
+footer {
+    text-align: center;
+}
+
+div.chatwidget{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 10px;
 }
 
 main nav{
-    width: 30%;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100&0.59+0,1+100;White+Gloss+%231 */
-    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0.59) 0%, rgba(241,241,241,0.8) 50%, rgba(225,225,225,0.8) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0.59) 0%,rgba(241,241,241,0.8) 50%,rgba(225,225,225,0.8) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  rgba(255,255,255,0.59) 0%,rgba(241,241,241,0.8) 50%,rgba(225,225,225,0.8) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 12%;  
 }
 
 main nav ul{
@@ -86,72 +83,18 @@ main nav ul{
 }
 
 main nav ul li{
-    background: #5db65261;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100&0.59+0,1+100;White+Gloss+%231 */
+      background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0.59) 0%, rgba(241,241,241,0.8) 50%, rgba(225,225,225,0.8) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0.59) 0%,rgba(241,241,241,0.8) 50%,rgba(225,225,225,0.8) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg,  rgba(255,255,255,0.59) 0%,rgba(241,241,241,0.8) 50%,rgba(225,225,225,0.8) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* background: #21f805d5; */
     padding: 10px;
 }
 
-main nav ul li:nth-child(odd){
-    background: #a1b369;
-}
-
-main nav ul li:nth-child(even){
-    background: #c2d099;
-}
-
-main nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    text-shadow: 2px 2px #000;
-    font-size: 20px;
-}
-
-main section{
-    width: 80%;
-    background: rgb(224, 255, 245);
-}
-
-main section article{
-    border: 3px solid #fff;
-}
-
-main section article h1{
-    color: blue;
-}
-
-footer{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-footer ul{
-    list-style-type: none;
-}
-
-footer ul li{
-    display: inline;
-    padding: 10px;
-    border-right: 1px solid #999;
-}
-
-footer ul li:last-child{
-    border-right: none;
-}
-
-#chatwidget{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-
-#chatwidget img{
-    width: 70%;
-}
-
-#shopping{
-    font-size: 30px;
-    position: relative;
-    right: 10px;
-    color: #03A9F4;
+nav A1 {
+    padding: 40px;
+    height: 400px;
+    width: 20px;
+    background-color: #ffffff;
 }
