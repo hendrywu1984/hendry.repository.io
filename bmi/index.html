@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Body Mass Index</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Kalkulator BMI</h1>
+        <p>Body Mass Index (BMI) adalah angka yang menentukan<br>apakah berat badan Anda ideal, kurang, atau berlebih.</p>
+    </div>
+    <div id='tabel2'>
+        <center><table border="1" id='tabel'>
+            <tr>
+                <td colspan="2"><h3>Untuk menghitung BMI Anda,<br>silakan jawab beberapa pertanyaan berikut</h3></td>
+            </tr>
+            <tr>
+                <td height="30">Umur Anda</td>
+                <!-- <td>                    
+                    <input id="baby" type="radio" name="tua" value="baby">
+                    <label for="baby-radio">0-1 tahun</label>
+                    <input id="anak" type="radio" name="tua" value="anak">
+                    <label for="anak-radio">1-10 tahun</label>
+                    <input id="dewasa" type="radio" name="tua" value="dewasa">
+                    <label for="dewasa-radio">> 10 tahun</label>
+                </td> -->
+                <td>
+                    <!-- <div class="combobox">
+                        <input id="umur" type="number" name="umur" value="" min="1" max="100" step="1"/> tahun<br/>
+                    </div> -->
+                    <select id="umur">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">>10</option>
+                    </select> tahun
+                </td>
+            </tr>
+            <tr>
+                <td height="30">Jenis Kelamin</td>
+                <td>
+                    <input id="pria" type="radio" name="jk" value="pria">
+                    <label for="pria-radio" id="lblPria">Pria</label>
+                    <input id="wanita" type="radio" name="jk" value="wanita">
+                    <label for="wanita-radio" id="lblWanita">Wanita</label>
+                </td>
+            </tr>     
+            <tr>
+                <td height="30">Tinggi Badan</td>
+                <td><input id="tinggi" name="tinggi" type="text" size="5" max="250"> cm</td>
+            </tr>      
+            <tr>
+                <td height="30">Berat Badan</td>
+                <td><input id="berat" name="berat" type="text" size="5" max="200"> kg</td>
+            </tr>     
+            <tr>
+                <td colspan="2" height="35"> <button id="hitung" type="hasil" class="hasil" style="margin-left:auto;margin-right:auto">Hitung</button></td>
+                
+            </tr>
+        </table>
+        </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

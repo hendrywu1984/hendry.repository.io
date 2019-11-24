@@ -1,0 +1,27 @@
+
+
+h3 {
+    text-align: center;
+}
+
+h1 {
+    color: tomato;
+}
+
+body{
+    background-image: url('images/bananas.png');
+}
+
+table {
+    background-color: whitesmoke;
+}
+
+.hasil{
+    height:37px;
+    width:80px;
+}
+
+button{
+    position:relative;
+    left:40%;
+}
